@@ -1,0 +1,81 @@
+{
+  "federation": {
+    "name": "GPTN-FEDERATION",
+    "epoch": "RECOVERY-EPOCH-1",
+    "continuity_mode": "replay-based",
+    "topology_status": "recovered"
+  },
+
+  "root": {
+    "repository": "GPTN-LINEAGE",
+    "role": "temporal-lineage",
+    "authority": "constitutional-root",
+    "continuity": "persistent"
+  },
+
+  "nodes": [
+    {
+      "name": "PSI-OS",
+      "role": "governance-runtime",
+      "status": "active",
+      "transport": "git+ssh"
+    },
+
+    {
+      "name": "SEIGIES",
+      "role": "continuity-metrology",
+      "status": "active",
+      "transport": "git+ssh"
+    },
+
+    {
+      "name": "SEiGi-S-fabric",
+      "role": "transport-fabric",
+      "status": "active",
+      "transport": "git+ssh"
+    },
+
+    {
+      "name": "Trikos-core",
+      "role": "runtime-core",
+      "status": "active",
+      "transport": "git+ssh"
+    },
+
+    {
+      "name": "HP-NET",
+      "role": "network-federation",
+      "status": "initializing",
+      "transport": "git+ssh"
+    }
+  ],
+
+  "continuity": {
+    "signed_snapshots": true,
+    "temporal_replay": true,
+    "federation_sync": true,
+    "authority_reconstruction": true,
+    "lineage_persistence": true
+  },
+
+  "identity": {
+    "root_identity": "GIO-ROOT-EHL-01",
+    "signer": "Trikoss",
+    "alignment_model": "replay-lineage",
+    "identity_mode": "constitutional"
+  },
+
+  "transport": {
+    "protocol": "git+ssh",
+    "signed_transport": true,
+    "wire_protocol": "ACTIVE",
+    "peer_handshake": "RECOVERABLE"
+  },
+
+  "topology": {
+    "federated": true,
+    "multi_node": true,
+    "portable_reconstruction": true,
+    "replay_bootstrap": true
+  }
+}
