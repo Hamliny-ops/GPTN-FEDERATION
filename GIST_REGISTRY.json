@@ -1,0 +1,16 @@
+{
+  "gists": [
+    {
+      "name": "upgrade_seigies.sh",
+      "role": "trust-bootstrap-layer",
+      "classification": "AAN-01",
+      "continuity_function": [
+        "ssh hardening",
+        "identity stabilization",
+        "transport legitimacy"
+      ],
+      "url": "https://gist.github.com/Hamliny-ops/3c46d9cb6e47638b296e9e152b65b732",
+      "status": "linked"
+    }
+  ]
+}
