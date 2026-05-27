@@ -1,0 +1,8 @@
+{
+  "epoch": "RECOVERY-EPOCH-1",
+  "continuity": "verified",
+  "transport": "git+ssh",
+  "signed_snapshots": true,
+  "replay_status": "active",
+  "federation_status": "hardened"
+}

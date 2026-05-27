@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "name": "termux-primary",
+      "role": "federation-root",
+      "status": "active"
+    },
+
+    {
+      "name": "aperetoo-wsl",
+      "role": "secondary-runtime",
+      "status": "recoverable"
+    }
+  ]
+}
